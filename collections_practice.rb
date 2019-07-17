@@ -51,13 +51,14 @@ end
 def add_s(array)
   new_array = []
   array.each do |string|
+    if array[1] == string
+      new_array << string
+    else
     string = "#{string}s"
     new_array << string
+    end
   end
-  new_array.collect do |string|
-    string[1].chop
-  end
-  new_array
+new_array
 end
 
 
