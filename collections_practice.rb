@@ -51,10 +51,12 @@ end
 def add_s(array)
   new_array = []
   array.each do |string|
-    if string.last = "s" == false
+    if string.end_with?("s")
+      new_array << string
+    else
       string = "#{string}s"
+      new_array << string
     end
-    new_array << string
   end
   new_array
 end
