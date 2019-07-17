@@ -54,7 +54,9 @@ def add_s(array)
     string = "#{string}s"
     new_array << string
   end
-  new_array[1].chop
+  new_array.collect do |string|
+    string[1].chop
+  end
   new_array
 end
 
