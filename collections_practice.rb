@@ -56,6 +56,7 @@ def add_s(array)
     end
     new_array << string
   end
+  new_array
 end
 
 
