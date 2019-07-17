@@ -54,7 +54,8 @@ def add_s(array)
     string = "#{string}s"
     new_array << string
   end
-  new_array[1]
+  new_array[1].chop
+  new_array
 end
 
 
